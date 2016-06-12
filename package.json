@@ -1,0 +1,47 @@
+{
+  "name": "socket.io-pubsub",
+  "version": "0.0.0",
+  "description": "Socket.io adapter for Google Pub/Sub, allowing to setup a socket.io cluster",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "lab -m 15000 -v -La code -r console -o stdout -r html -o coverage/coverage.html -r lcov -o coverage/lcov.info"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elegantmonkeys/socket.io-pubsub.git"
+  },
+  "keywords": [
+    "socket.io",
+    "gcp",
+    "gcloud",
+    "pubsub",
+    "adapter",
+    "cluster",
+    "websocket"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/elegantmonkeys/socket.io-pubsub/issues"
+  },
+  "homepage": "https://github.com/elegantmonkeys/socket.io-pubsub#readme",
+  "dependencies": {
+    "async": "^2.0.0-rc.5",
+    "debug": "^2.2.0",
+    "shortid": "^2.2.6",
+    "socket.io-adapter": "^0.4.0"
+  },
+  "devDependencies": {
+    "code": "^3.0.1",
+    "gcloud": "^0.35.0",
+    "lab": "^10.7.1",
+    "socket.io": "^1.4.6",
+    "socket.io-client": "^1.4.6",
+    "tape": "^4.5.1"
+  },
+  "peerDependencies": {
+    "gcloud": "^0.35.0"
+  }
+}
