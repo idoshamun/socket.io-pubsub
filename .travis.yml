@@ -4,10 +4,6 @@ node_js:
 - '4'
 - '5'
 - '6'
-- latest
+- 'node'
 before_install:
-- openssl aes-256-cbc -K $encrypted_88aca5551d8b_key -iv $encrypted_88aca5551d8b_iv
-  -in key.json.enc -out key.json -d
-env:
-  global:
-    secure: m8Q9dLQ7H9tGIUj2lpd85K4Kc0avJbKiAKu0jUI39BkB6o1xNDliCftPV225LM6CHow5gm18yOvAslpDEVPIRpfWHBT6SEJugNmrUXpelrZ8skLgkqMy45w5LqCPceK9Z+fqz+6iiPCdVHtN6ShtSKbBMRS7WGpm4GSw2y4VKBfMEZx4CrGTyUWnQ6ZDKsOqI1CSqEZVCMmCpsEX0w+nSJGpBzcWSxSRKpCVFeOqqQhCtRvHJzXSEngFgV3fd6jxPO12S9HrAITHA3HqVPPfmKLNx+NO7xYfSG5XqTpwVyttEPJ7bFM6nxkXK34KpJ/+zpa9KOr7KGkXh02tvbLasWcXlKkUPGPh0vDK+InB5YgxOkSRQoQLOyfIvJdieZRVtAIwDkgmMRLpTAI0SBt7HY4clLb7PYewUOL5CLCUwfAi6dYBxp8DJ0o8oNHdjPz7BLJzWTd2kOBJU/W1zHKcs5yzUsoaKlpiAwpOz8jA7MB6m6RaoHSDiKsQ7lMLcQmgXnziRLmu5svYkxqvqapNvTQxLtuiMLf3wcwKWYQlK9eLZHvjJ0/aOnyV8dzBm4VPxSNWCYxWcGQot7kGrh5348b2szW/1bX+qCs2YpmH8pcC9S1a6pe96NXtc41e+YrEdokNYjANMdtuVHhGD9WYEyO8Vlo6CbPLMqdza5RD8Sg=
+- openssl aes-256-cbc -K $encrypted_18a5362e2d83_key -iv $encrypted_18a5362e2d83_iv -in key.json.enc -out key.json -d
