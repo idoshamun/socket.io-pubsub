@@ -7,3 +7,5 @@ node_js:
 - 'node'
 before_install:
 - openssl aes-256-cbc -K $encrypted_18a5362e2d83_key -iv $encrypted_18a5362e2d83_iv -in key.json.enc -out key.json -d
+after_script:
+- codeclimate-test-reporter < coverage/lcov.info  
