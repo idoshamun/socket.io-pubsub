@@ -6,7 +6,7 @@ const Lab = require('lab');
 const http = require('http').Server;
 const io = require('socket.io');
 const ioc = require('socket.io-client');
-const gcloud = require('gcloud')({
+const gcloud = require('google-cloud')({
     projectId: 'socketio-pubsub-testing',
     keyFilename: 'key.json'
 });
