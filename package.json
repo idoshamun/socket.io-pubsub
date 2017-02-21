@@ -1,6 +1,6 @@
 {
   "name": "socket.io-pubsub",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Socket.io adapter for Google Pub/Sub, allowing to setup a socket.io cluster",
   "main": "lib/index.js",
   "scripts": {
