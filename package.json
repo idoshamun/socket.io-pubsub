@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "code": "^3.0.1",
-    "google-cloud": "^0.47.0",
+    "google-cloud": "^0.48.0",
     "lab": "^10.7.1",
     "socket.io": "^1.4.6",
     "socket.io-client": "^1.4.6",
