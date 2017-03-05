@@ -1,6 +1,6 @@
 {
   "name": "socket.io-pubsub",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Socket.io adapter for Google Pub/Sub, allowing to setup a socket.io cluster",
   "main": "lib/index.js",
   "scripts": {
@@ -42,6 +42,6 @@
     "tape": "^4.5.1"
   },
   "peerDependencies": {
-    "google-cloud": "^0.47.0"
+    "google-cloud": "^0.48.0"
   }
 }
