@@ -1,13 +1,11 @@
 # socket.io-pubsub
 
 [![Build Status](https://travis-ci.org/elegantmonkeys/socket.io-pubsub.svg?branch=master)](https://travis-ci.org/elegantmonkeys/socket.io-pubsub)
-[![Code Climate](https://codeclimate.com/github/elegantmonkeys/socket.io-pubsub/badges/gpa.svg)](https://codeclimate.com/github/elegantmonkeys/socket.io-pubsub)
-[![Test Coverage](https://codeclimate.com/github/elegantmonkeys/socket.io-pubsub/badges/coverage.svg)](https://codeclimate.com/github/elegantmonkeys/socket.io-pubsub/coverage)
 
 ## How to use
 
 ```js
-const gcloud = require('gcloud')();
+const gcloud = require('google-cloud')();
 const pubsub = gcloud.pubsub();
 const io = require('socket.io')(3000);
 const pubsubAdapter = require('socket.io-pubsub');
@@ -25,7 +23,7 @@ process, you should use [socket.io-emitter](https://github.com/socketio/socket.i
 
 ### adapter(pubsub[, opts])
 
-`pubsub` is a [gcloud](https://googlecloudplatform.github.io/gcloud-node/#/docs/gcloud) [pubsub](https://googlecloudplatform.github.io/gcloud-node/#/docs/pubsub) object. 
+`pubsub` is a [google-cloud](https://googlecloudplatform.github.io/google-cloud-node/#/docs/google-cloud) [pubsub](https://googlecloudplatform.github.io/google-cloud-node/#/docs/google-cloud/pubsub) object. 
 
 The following options are allowed:
 
@@ -43,4 +41,4 @@ that a regular `Adapter` does not
 
 ## License
 
-MIT
+Apache 2.0
