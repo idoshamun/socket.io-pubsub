@@ -5,11 +5,11 @@
 ## How to use
 
 ```js
-const gcloud = require('google-cloud')();
-const pubsub = gcloud.pubsub();
+const pubsub = require('@google-cloud/pubsub');
+const pubsubClient = pubsub();
 const io = require('socket.io')(3000);
 const pubsubAdapter = require('socket.io-pubsub');
-io.adapter(pubsubAdapter(pubsub));
+io.adapter(pubsubAdapter(pubsubClient));
 ```
 
 By running socket.io with the `socket.io-pubsub` adapter you can run
