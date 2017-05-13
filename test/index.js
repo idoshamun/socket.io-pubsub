@@ -6,11 +6,11 @@ const Lab = require('lab');
 const http = require('http').Server;
 const io = require('socket.io');
 const ioc = require('socket.io-client');
-const gcloud = require('google-cloud')({
+const gcloudPubsub = require('@google-cloud/pubsub');
+const pubsub = gcloudPubsub({
     projectId: 'socketio-pubsub-testing',
     keyFilename: 'key.json'
 });
-const pubsub = gcloud.pubsub();
 const adapter = require('..');
 
 const lab = exports.lab = Lab.script();
@@ -28,7 +28,7 @@ describe('socket.io-pubsub', () => {
                     expect(b).to.equal({ a: 'b' });
                     client1.disconnect();
                     client2.disconnect();
-                    setTimeout(done, 2000);
+                    done();
                 });
                 server2.on('connection', c2 => {
                     c2.broadcast.emit('woot', [], { a: 'b' });
@@ -61,7 +61,7 @@ describe('socket.io-pubsub', () => {
                         client1.disconnect();
                         client2.disconnect();
                         client3.disconnect();
-                        setTimeout(done, 2000);
+                        done();
                     });
 
                     client2.on('broadcast', () => {
@@ -93,8 +93,8 @@ describe('socket.io-pubsub', () => {
                                 client1.disconnect();
                                 client2.disconnect();
                                 client3.disconnect();
-                                setTimeout(done, 2000);
-                            }, 1000);
+                                done();
+                            }, 2000);
                         });
                     });
 
@@ -115,12 +115,12 @@ describe('socket.io-pubsub', () => {
             server.on('connection', c => {
                 c.join('woot');
                 c.on('disconnect', () => {
-                    expect(c.adapter.sids[c.id]).to.be.empty();
-                    expect(c.adapter.rooms).to.be.empty();
+                    expect(c.adapter.sids[c.id] || {}).to.be.empty();
+                    expect(c.adapter.rooms || []).to.be.empty();
                     client.disconnect();
-                    setTimeout(done, 2000);
+                    done();
                 });
-                setTimeout(c.disconnect.bind(c), 2000);
+                c.disconnect();
             });
         });
     });
