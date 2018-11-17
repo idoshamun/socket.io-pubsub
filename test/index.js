@@ -93,7 +93,6 @@ describe('socket.io-pubsub', () => {
                                 client1.disconnect();
                                 client2.disconnect();
                                 client3.disconnect();
-                                done();
                             }, 2000);
                         });
                     });
@@ -118,7 +117,6 @@ describe('socket.io-pubsub', () => {
                     expect(c.adapter.sids[c.id] || {}).to.be.empty();
                     expect(c.adapter.rooms || []).to.be.empty();
                     client.disconnect();
-                    done();
                 });
                 c.disconnect();
             });
