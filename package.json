@@ -21,20 +21,21 @@
   ],
   "license": "Apache-2.0",
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=8.13.0"
   },
   "bugs": {
     "url": "https://github.com/elegantmonkeys/socket.io-pubsub/issues"
   },
   "homepage": "https://github.com/elegantmonkeys/socket.io-pubsub#readme",
   "dependencies": {
+    "acorn": "^6.1.1",
     "async": "^2.6.1",
     "debug": "^3.1.0",
     "shortid": "^2.2.8",
     "socket.io-adapter": "^1.1.1"
   },
   "devDependencies": {
-    "@google-cloud/pubsub": "^0.19.0",
+    "@google-cloud/pubsub": "^0.29.1",
     "code": "^5.2.0",
     "lab": "^17.3.0",
     "socket.io": "^2.1.1",
