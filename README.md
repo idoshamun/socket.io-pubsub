@@ -23,11 +23,12 @@ process, you should use [socket.io-emitter](https://github.com/socketio/socket.i
 
 ### adapter(pubsub[, opts])
 
-`pubsub` is a [google-cloud](https://googlecloudplatform.github.io/google-cloud-node/#/docs/google-cloud) [pubsub](https://googlecloudplatform.github.io/google-cloud-node/#/docs/google-cloud/pubsub) object. 
+`pubsub` is a [google-cloud](https://googlecloudplatform.github.io/google-cloud-node/#/docs/google-cloud) [pubsub](https://googlecloudplatform.github.io/google-cloud-node/#/docs/google-cloud/pubsub) object.
 
 The following options are allowed:
 
 - `key`: the topic name of the pub/sub events (`socket.io`)
+- `createSubscriptionOpts`: [options for creating a subscription](https://googleapis.dev/nodejs/pubsub/latest/global.html#CreateSubscriptionRequest)
 
 
 ### PubsubAdapter
