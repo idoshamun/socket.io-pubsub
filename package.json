@@ -35,9 +35,9 @@
     "socket.io-adapter": "^1.1.1"
   },
   "devDependencies": {
-    "@google-cloud/pubsub": "^0.29.1",
+    "@google-cloud/pubsub": "^1.6.0",
+    "@hapi/lab": "^22.0.4",
     "code": "^5.2.0",
-    "lab": "^17.3.0",
     "socket.io": "^2.1.1",
     "socket.io-client": "^2.1.1",
     "tape": "^4.9.1"

@@ -1,7 +1,7 @@
 'use strict';
 
 const Code = require('code');
-const Lab = require('lab');
+const Lab = require('@hapi/lab');
 
 const http = require('http').Server;
 const io = require('socket.io');
