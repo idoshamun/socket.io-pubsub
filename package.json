@@ -29,7 +29,7 @@
   "homepage": "https://github.com/elegantmonkeys/socket.io-pubsub#readme",
   "dependencies": {
     "acorn": "^6.1.1",
-    "async": "^2.6.1",
+    "async": "^3.2.2",
     "debug": "^3.1.0",
     "shortid": "^2.2.8",
     "socket.io-adapter": "^1.1.1"
